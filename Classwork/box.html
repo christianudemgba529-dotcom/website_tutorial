@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Box-sizing</title>
+    <style>
+        * {
+            padding: 0;
+            margin:0;
+            box-sizing: border-box;
+        }
+        .box:first-child {
+            position: relative;
+            height: 50vh;
+            width: 50%;
+            top: 0;
+            left: 0;
+            background-color:red;
+        }
+       .box:nth-child(2) {
+            position:absolute;
+            height: 50vh;
+            width: 50%;
+            top: 0;
+            right: 0;
+            background-color: green;
+       }
+       .box:nth-child(3) {
+            position: absolute;
+            height: 50vh;
+            width: 50%;
+            bottom: 0;
+            right: 0;
+            background-color: rgb(255, 255, 0);
+       }
+       .box:nth-child(4) {
+            position: absolute;
+            height: 50vh;
+            width: 50%;
+            bottom: 0;
+            left: 0;
+            background-color: blue;
+       }
+       .box:nth-child(even) {
+        background-color:black;
+       }
+       .box:nth-child(odd) {
+        background-color:indigo;
+       }
+       img {
+        position: relative;
+        height: auto;
+        width: 100%
+       }
+     </style>
+</head>
+<body>
+
+    <div class="box"><img src="https://i.pinimg.com/236x/56/06/0f/56060ff7a98f5617c2dd143eabd4d840.jpg" alt="sunglasses"></div>
+    <div class="box"><img src="https://i.pinimg.com/236x/56/06/0f/56060ff7a98f5617c2dd143eabd4d840.jpg" alt="sunglasses"></div>
+    <div class="box"><img src="https://i.pinimg.com/236x/56/06/0f/56060ff7a98f5617c2dd143eabd4d840.jpg" alt="sunglasses"></div>
+    <div class="box"><img src="https://i.pinimg.com/236x/56/06/0f/56060ff7a98f5617c2dd143eabd4d840.jpg" alt="sunglasses"></div>
+
+</body>
+</html>

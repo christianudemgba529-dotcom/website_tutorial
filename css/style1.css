@@ -1,0 +1,279 @@
+
+        * {
+            padding: 0;
+            margin: 0;
+            border: none;
+            box-sizing: border-box;
+        }
+
+/* ///////////////////////// */
+/* ///////////////////////// */
+
+        header {
+            position: relative;
+            width: 100%;
+            height:75px;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            padding: 0 160px;
+            justify-content: space-between;
+        }
+        header .logo {
+            position: relative;
+            width: 40%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        header nav {
+            position: relative;
+            width: 60%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+
+        }
+        header nav ul {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+        }
+        
+        ul li {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            list-style-type: none;
+            color: #000;
+            height: 100%;
+            width: 100px;
+            margin-left: 5px;
+            font-weight: bold;
+            text-align: center;
+        }
+        ul li a {
+            text-decoration: none;
+            color: black;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            font-size: 18px;
+            height: 100%;
+        }
+        ul li:hover {
+            /*color: white;
+            background: #555;*/
+            cursor: pointer;
+        }
+        ul li a.active {
+            font-weight: bold;
+            color: crimson;
+        }
+
+
+/* //////////////////////////// */
+/* //////////////////////////// */
+
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 80vh;
+            background: black;
+            overflow: hidden;
+        }
+        .hero img {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.6;
+        }
+        section {
+            position: relative;
+            width: 100%;
+            height: auto;
+            padding: 20px 160px;
+        }
+        .foodmenu {
+            position: relative;
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            /* justify-content: space-between; */
+        }
+        .title {
+            position: relative;
+            text-align: center;
+            margin: 20px 0;
+            font-size: 20px;
+            font-weight: bold;
+
+        }
+        /* ////////////////////////////////////// */
+        .Info {
+            position: relative;
+            margin-top: 20px;
+            width: 100%;
+        }
+        .flex-wrap {
+            position: relative;
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px 100px;
+            gap: 50px;
+            justify-content: space-between;
+        }
+        .flex-wrap .content {
+            position: relative;
+            width: 40%;
+            height: 100%;
+
+        }
+        .flex-wrap h2 {
+            font-size: 24px;
+            color: #000;
+            margin-bottom: 20px;
+        }
+        .flex-wrap p {
+            color: #333;
+            text-align: left;
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+        .flex-wrap button {
+            color: #fff;
+            background-color: orange;
+            width: 150px;
+            height: 45px;
+            margin-bottom: 5px;
+            border-radius: 15px;
+        }
+        .flex-wrap .image {
+            position: relative;
+            width: 30%;
+            height: 100%;
+            margin-bottom: 5px;
+        }
+        .flex-wrap .image img {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            object-fit: contain;
+        }
+        .col {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+
+        }
+        .col img {
+            position: relative;
+            width: 100%;
+            height: 100%; 
+            object-fit: cover;   
+        }
+
+
+/* //////////////////////////// */
+/* //////////////////////////// */
+
+        .write-up {
+            position: absolute;
+            width: 80%;
+            height: auto;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            color: #eee;
+        }
+        .write-up h1 {
+            position: relative;
+            height: auto;
+            width: 100%;
+            font-size: 70px;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .write-up h2 {
+            position: relative;
+            height: auto;
+            width: 100%;
+            font-size: 30px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .write-up p {
+            position: relative;
+            height: auto;
+            width: 100%;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        .write-up button {
+            position: relative;
+            height: 45px;
+            width: 150px;
+            margin-left: auto;
+            margin-right: auto;
+            background: crimson;
+            color: #eee;
+            font-size: 18px;
+            border: none;
+            border-radius: 15px;
+            text-align: center;
+            display: block;
+            margin-bottom: 10px;
+        }
+        button:hover {
+            color: crimson;
+            background: white;
+        }
+
+/* ///////////////////////////////// */
+/* ///////////////////////////////// */
+
+         h1 span,h2 span {
+            position: relative;
+            color: crimson;
+        }
+        footer {
+            position: relative;
+            width: 100%;
+            height: auto;
+            padding: 20px 160px;
+            background: #000;
+            color: #fff;
+        }
+        footer .footer-content {
+            position: relative;
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        footer .footer-content h4 span {
+            color: crimson;
+        }
+        footer .footer-content .copy {
+            position: relative;
+            font-size: 12px;
+        }

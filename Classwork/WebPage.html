@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>WebPage</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background-image : url("https://i.pinimg.com/736x/a2/15/9e/a2159e0960bd67ee3ad366b26253fc50.jpg");
+            background-size: cover;
+            background-position: center;
+            opacity: 0.7; 
+        } 
+        .container .write-up {
+            position: absolute;
+            width: 70%;
+            height: auto;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50% , -50%);
+            z-index: 2;
+
+        }
+        .container .write-up h1 {
+            position: relative;
+            width: 100%;
+            height: auto;
+            text-align: center;
+            margin-bottom: 20px;
+            padding: 20px 0 ;
+            color: white;
+            font-size: 50px;
+            text-transform: uppercase;
+            letter-spacing: 1.5;
+        }
+        .container .write-up p {
+            position: relative;
+            width: 80%;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 15px;
+            text-align: center;
+            color: #fff;
+            font-size: 24px;
+        }
+        .container .write-up button {
+            position: relative;
+            width: 150px;
+            height: 45px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            border-radius: 25px;
+            border: 1px solid #000;
+            transition: 0.5;
+            cursor: pointer;
+        }
+        button:hover{
+              background: #333;
+              color: #fff;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="write-up">
+            <h1>McDonald's Restaurant</h1>
+            <p>Welcome to McDonald's. 
+            Make orders online and get them in less than an hour and
+            our customer friendly policy that gives 
+            you a free burger even if we are one minute late.</p>
+            <button>READ MORE</button>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Latest hits</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .card:first-child{
+            position:relative;
+            background-color: red;
+            top: 0;
+            right: 0;
+            height: 200px;
+            width: 50%;
+        }
+        .card:nth-child(2){
+            position:absolute;
+            background-color: blue;
+            top: 0;
+            left: 50%;
+            height: 200px;
+            width: 50%;
+        }
+        .card:nth-child(3){   
+            position: relative; 
+            background-color: green;
+            top: 200px;
+            right: 0;
+            height: 200px;
+            width: 50%;
+        }
+        .card:nth-child(4){
+            position: absolute;
+            background-color: yellow;
+            top: 200px;
+            left:50%;
+            height: 200px;
+            width: 50%;
+        }
+        .card:nth-child(5){
+            background-color: indigo;
+            right: 0;
+            top: 400px;
+            height: 200px;
+            width: 50%;
+        }
+        .card:nth-child(6){
+            position: absolute;
+            background-color: orange;
+            left: 50%;
+            top: 400px;
+            height: 200px;
+            width: 50%;
+        }
+        .card:nth-child(odd){
+            border: 2px solid black;
+            margin-left: 10px;
+            margin-bottom: 3px;
+        }
+        .card:hover {
+            opacity: 0.3;
+            border: 0;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+</body>
+</html>

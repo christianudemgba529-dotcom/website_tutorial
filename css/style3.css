@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 20px 140px;
+}
+
+.flex-wrap {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
+.col {
+    position: relative;
+    width: 45%;
+    height: 100%;
+    background: #fff;
+}
+.about .flex-wrap .col:first-child {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    padding: 20px 30px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+.about .flex-wrap .col:first-child img {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    object-fit: contain;
+}
+.about .flex-wrap .col:last-child {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    padding: 20px 30px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+.about .flex-wrap .col:last-child img {
+    position: relative;
+    height: 50%;
+    transform: scaleX(-1);
+    width: 100%;
+    object-fit: contain;
+}
+
+.write-up {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 20px 20px;
+    color: #000;
+}
+.write-up h2 {
+    font-size: 45px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.write-up p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+.write-up button {
+    position: relative;
+    height: 45px;
+    width: 150px;
+    background: #222;
+    color: #fff;
+    margin: 10px 0;
+    border-radius: 15px;
+}

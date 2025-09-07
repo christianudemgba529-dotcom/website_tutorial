@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing:  border-box;
+        }  
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(26, 20, 65);
+        }
+        .image {
+            position: relative;
+            width: 80%;
+            height: 70%;
+            top: 50%;
+            left:50%;
+            background-image: url("https://i.pinimg.com/736x/f2/05/67/f205675dc9c56abd9ad1bb3d9b5ae86a.jpg");
+            transform: translate(-50%,-50%);
+            box-shadow: 6px 6px 5px lightslategray;
+            border-radius: 5px;
+            color: yellow;
+            height: 70vh;
+            width: 80%;
+            background-size: cover;
+            background-position: center;
+            
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        li {
+            float: right;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        li a:hover {
+            background-color: #111;
+            color: white;
+            opacity: .3;
+        }
+        .container .image h1 {
+            position: relative;
+            height: auto;
+            width: 100%;
+            padding: 20px 20px 20px 20px;
+            text-align: center;
+            font-size: 60px;
+            padding-top: 20px;
+            margin-bottom: 20px;
+        }
+        .container .image p {
+            position: relative;
+            height: auto;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 18px;
+        }
+        .container .image button {
+            position: relative;
+            height: 45px;
+            width: 150px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            border-radius: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image">
+            <ul>
+                <li><a href="CONTACT.HTML">CONTACT US</a></li>
+                <li><a href="BLOG.HTML">BLOG</a></li>
+                <li><a href="ABOUT.HTML">ABOUT</a></li>
+                <li><a href="HOME.HTML">HOME</a>
+                <li><a href="your logo">&#x26AA; YOUR LOGO</a>
+            </ul>
+
+            <h1 class="write-up">WELCOME</h1>
+            <p>Have you heard about Duolingo, if not, well you have now, welcome to the world's top 
+                leading language learning AI. Duolingo is not just an AI, it is on another whole new level of 
+                machine programming. Duolingo interacts with users in many possible ways better than the infamous 
+                Copilot or any other popular AI.
+                Try now and never complain about the user interfaces again. 
+            </p>
+            
+            <button>READ MORE</button>
+        </div>
+
+    </div>
+    
+</body>
+</html>

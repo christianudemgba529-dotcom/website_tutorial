@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Landing</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            border: 0;
+            box-sizing: border-box;
+            font-family: 'poppins' , sans-serif;
+        }
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background: #f7d5d5;
+            padding: 80px 160px;
+            background: linear-gradient( 90deg, skyblue, white);
+        }
+        .container .flex-wrap {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background: #eee;
+            gap: 20px;
+            display: flex;
+        }
+        .container .flex-wrap .col {
+            position: relative;
+            height: 400px;
+            width: 50%;
+            padding: 30px 80px;
+            background: rgb(174, 249, 252);
+        }
+        .container .flex-wrap .col:first-child {
+            position: relative;
+            height: auto;
+            width: 50%;
+            background: red;
+        }
+        .container .flex-wrap .col:first-child h2 {
+            height: auto;
+            font-weight: 500;
+            font-size: 50px;
+            letter-spacing: 0.02;
+            line-height: 60px;
+            margin-bottom: 10px;
+        }
+        .container .flex-wrap .col:first-child p {
+            font-weight: 400;
+            font-size: 15px;
+            margin-bottom: 15px;
+        }
+        input {
+            position: relative;
+            height: 20px;
+        }
+        button {
+            position: relative;
+            height: 20px;
+            background-color: yellow;
+            color: #000;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="flex-wrap">
+            <div class="col">
+                <h2>Knowledge is an investment that will never lose.</h2>
+                <p>Improve your skill and knowledge for a better clearer future.</p>
+
+                <div class="search-input">
+                    <input type="search">
+                    <button>Search</button>
+                </div>
+            </div>
+            <div class="col">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>inp
