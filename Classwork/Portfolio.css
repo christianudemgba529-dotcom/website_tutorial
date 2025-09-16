@@ -1,0 +1,207 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+header {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    /* background-color: #000; */
+    color: #fff;
+    z-index: 1;
+
+}
+header .top-header {
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    background-color: rgba(0,0,0, 0.5);
+    padding: 0 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.top-header .logo {
+    position: relative;
+    font-size: 30px;
+    font-weight: bold;
+}
+.top-header nav {
+    position: relative;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    gap: 20px;
+}
+.top-header nav a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+.top-header nav a:hover {
+    position: relative;
+    text-decoration: none;
+    color: crimson;
+}
+.top-header .hero {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    background: #222;
+}
+h1 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 18px;
+    font-size: 32px;
+    color: #fff;
+}
+
+section {
+    position: relative;
+    height: auto;
+    width: 100%;
+    padding: 50px 140px;
+    background: rgba(33, 2, 148, 0.836);
+}
+
+.about {
+    position: relative;
+    height: auto;
+    width: 100%;
+    color: #fff;
+    display:flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.col:first-child img {  
+    position: relative;
+    height: 300px; 
+    width: 400px; 
+    object-fit:fill;
+}
+.col:nth-child(2) {
+    position: relative;
+    height: auto;
+    width: 500px;
+    color: #fff;
+}
+.info {
+    position: relative;
+    height: 200px;
+    width: 500px;
+    border: 2px solid crimson;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin: 10px 0;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.info .minicol {
+    position: relative;
+    height: 90%;
+    width: 200px;
+    line-height: 30px;
+    padding: 20px 40px;
+    color: #fff;
+}
+.about button {
+    position: relative;
+    height: 45px;
+    width: 150px;
+    border-radius: 15px;
+    background-color: orangered;
+    color: #fff;
+}
+.service {
+    position: relative;
+    height: auto;
+    width: 100%;
+    padding: 20px 0;
+    color: crimson;
+}
+.service .offers {
+    position: relative;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 30px ;
+    justify-content: center;
+}
+.service .offers .col2 {
+    position: relative;
+    height: 130px;
+    width: 250px;
+    border: 2px solid crimson;
+    border-radius: 10px;
+}
+
+.contact {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    text-align: center;
+    justify-content: center;
+}
+.contact h5 {
+    position: relative;
+    font-weight: bold;
+    color: orangered;
+    font-size: 24px;
+}
+.contact h3 {
+    font-weight: bold;
+    font-size: 36px;
+    padding: 10px 0;
+}
+.contact p {
+    font-size: 18px;
+    padding-bottom: 5px;
+}
+.contact input {
+    position: relative;
+    height: 35px;
+    width: 350px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+.contact button {
+    position: relative;
+    height: 35px;
+    width: 150px;
+    background: orangered;
+    color: white;
+    border-radius: 15px;
+}
+footer {
+    position: relative;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    background-color: rgba(0,0,0, 0.5);
+    padding: 0 160px;
+    align-items: center;
+    justify-content: space-between;
+
+}
+footer p {
+    position: relative;
+    font-size: 30px;    
+    font-weight: bold;
+}
+
