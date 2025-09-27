@@ -172,11 +172,16 @@ section {
     width: auto;
     display: flex;
     flex-wrap: wrap;
+    color: orangered;
     font-size: 15px;
 }
 .about-flex-data .head {
     position: relative;
     font-weight: bold;
+}
+.about-flex-data .subtitle {
+    position: relative;
+    color: #fff;
 }
 .service {
     position: relative;
