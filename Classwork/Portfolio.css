@@ -8,10 +8,20 @@ header {
     position: relative;
     height: 100vh;
     width: 100%;
-    /* background-color: #000; */
+    background-color: #000; 
     color: #fff;
     z-index: 1;
-
+    background-attachment: fixed;
+}
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.7;
 }
 header .top-header {
     position: fixed;
@@ -22,8 +32,8 @@ header .top-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 2;
 }
-
 
 .top-header .logo {
     position: relative;
@@ -48,47 +58,95 @@ header .top-header {
     text-decoration: none;
     color: crimson;
 }
-.top-header .hero {
-    position: relative;
-    height: 100vh;
-    width: 100%;
+header .hero {
+    position: absolute;
+    height: auto;
+    width: 80%;
+    top: 50%;
     left: 50%;
     text-align: center;
     transform: translate(-50%, -50%);
-    background: #222;
 }
-h1 {
+header .hero img {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+header .hero h1 {
     position: relative;
     width: 100%;
     height: auto;
-    margin-bottom: 18px;
-    font-size: 32px;
+    margin-bottom: 10px;
+    font-size: 50px;
     color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
 }
+header .hero h1 .name {
+    position: relative;
+    color: crimson;
 
+}
+header .hero p {
+    position: relative;
+    font-size: 20px;
+    margin-bottom: 8px;
+
+}
+button {
+    position: relative;
+    height: 45px;
+    width: 150px;
+    background-color: crimson;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.5s;
+}
+button:hover {
+    background: transparent;
+    color: #fff;
+    border: 2px solid crimson;
+}
 section {
     position: relative;
     height: auto;
     width: 100%;
     padding: 50px 140px;
-    background: rgba(33, 2, 148, 0.836);
+    background-color: #080125;
 }
+
+/* ////////////////////////////// */
+/* ////////////////////////////// */
 
 .about {
     position: relative;
     height: auto;
     width: 100%;
     color: #fff;
-    display:flex;
+}
+.flex-div {
+    position: relative;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 20px;
 }
 
 .col:first-child img {  
     position: relative;
     height: 300px; 
-    width: 400px; 
-    object-fit:fill;
+    width: 300px; 
+    object-fit: cover;
+    object-position: top;
 }
 .col:nth-child(2) {
     position: relative;
@@ -96,33 +154,29 @@ section {
     width: 500px;
     color: #fff;
 }
-.info {
+.about-data {
     position: relative;
-    height: 200px;
+    height: auto;
     width: 500px;
     border: 2px solid crimson;
     border-radius: 10px;
     padding: 10px 15px;
     margin: 10px 0;
-    display: flex;
     gap: 10px;
     justify-content: center;
 }
-.info .minicol {
+
+.about-flex-data {
     position: relative;
-    height: 90%;
-    width: 200px;
-    line-height: 30px;
-    padding: 20px 40px;
-    color: #fff;
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 15px;
 }
-.about button {
+.about-flex-data .head {
     position: relative;
-    height: 45px;
-    width: 150px;
-    border-radius: 15px;
-    background-color: orangered;
-    color: #fff;
+    font-weight: bold;
 }
 .service {
     position: relative;
@@ -131,7 +185,7 @@ section {
     padding: 20px 0;
     color: crimson;
 }
-.service .offers {
+.service .flex {
     position: relative;
     height: auto;
     width: 100%;
@@ -141,14 +195,30 @@ section {
     padding: 30px ;
     justify-content: center;
 }
-.service .offers .col2 {
+.service .flex .col2 {
     position: relative;
     height: 130px;
     width: 250px;
     border: 2px solid crimson;
     border-radius: 10px;
+    padding: 10px 15px;
 }
-
+.service .flex .col2 h2 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: orangered;
+}
+.service .flex .col2 p {
+    position: relative;
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+    color: #fff;
+    text-align: left;
+}
 .contact {
     position: relative;
     width: 100%;
@@ -178,14 +248,7 @@ section {
     width: 350px;
     border: 1px solid black;
     border-radius: 15px;
-}
-.contact button {
-    position: relative;
-    height: 35px;
-    width: 150px;
-    background: orangered;
-    color: white;
-    border-radius: 15px;
+
 }
 footer {
     position: relative;
