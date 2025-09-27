@@ -244,11 +244,14 @@ section {
 }
 .contact input {
     position: relative;
-    height: 35px;
+    height: 45px;
     width: 350px;
     border: 1px solid black;
     border-radius: 15px;
-
+}
+.contact button:hover {
+    position: relative;
+    color: #000;
 }
 footer {
     position: relative;
